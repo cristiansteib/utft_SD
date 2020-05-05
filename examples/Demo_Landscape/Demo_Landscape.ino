@@ -25,7 +25,7 @@
 extern uint8_t SmallFont[];
 
 UTFT         myGLCD(ITDB32S, 38, 39, 40, 41);   // Remember to change the model parameter to suit your display module!
-UTFT_tinyFAT myFiles(&myGLCD);
+UTFT_SD myFiles(&myGLCD);
 
 // List of filenames for pictures to display. 
 char* files320[]={"PIC301.RAW", "PIC302.RAW", "PIC303.RAW", "PIC304.RAW", "PIC305.RAW", "PIC306.RAW", "PIC307.RAW", "PIC308.RAW", "PIC309.RAW", "PIC310.RAW"}; // 320x240

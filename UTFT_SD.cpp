@@ -23,14 +23,14 @@
   Please see the included documents for further information.
 */
 
-#include "UTFT_tinyFAT.h"
+#include "UTFT_SD.h"
 
-UTFT_tinyFAT::UTFT_tinyFAT(UTFT *ptrUTFT)
+UTFT_SD::UTFT_SD(UTFT *ptrUTFT)
 {
 	_UTFT = ptrUTFT;
 }
 
-word UTFT_tinyFAT::loadBitmap(int x, int y, int sx, int sy, char *filename)
+word UTFT_SD::loadBitmap(int x, int y, int sx, int sy, char *filename)
 {
 	int res;
 	int cx, cy, cp;
@@ -103,7 +103,7 @@ word UTFT_tinyFAT::loadBitmap(int x, int y, int sx, int sy, char *filename)
 	}
 }
 
-word UTFT_tinyFAT::loadBitmap(int x, int y, int sx, int sy, String filename)
+word UTFT_SD::loadBitmap(int x, int y, int sx, int sy, String filename)
 {
 	char buf[filename.length()+1];
 

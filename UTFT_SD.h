@@ -32,10 +32,10 @@
 #endif
 #include "SD.h"
 
-class UTFT_tinyFAT
+class UTFT_SD
 {
 	public:
-		UTFT_tinyFAT(UTFT *ptrUTFT);
+		UTFT_SD(UTFT *ptrUTFT);
 
 		word loadBitmap(int x, int y, int sx, int sy, char *filename);
 		word loadBitmap(int x, int y, int sx, int sy, String filename);
